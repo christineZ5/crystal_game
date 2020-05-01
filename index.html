@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+	<html lang="en">
+	    <head>
+	        <meta charset="UTF-8">
+	        <meta name="viewport" content="width=device-width, initial-scale=1">
+	        <meta name="description" content="Crystal Game #4">
+	        <meta name="author" content="Christine Munoz">
+	
+
+	        <title>Crystal Collector Game</title>
+	        
+	       
+	        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Architects+Daughter|The+Girl+Next+Door">
+	        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	        
+	        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+		
+        <!--added music and nav button-->
+        <link rel="audio" href="assets/audio/crystalmission.mp3">
+
+        <style>
+          nav#nav1{ margin-top: 24px; }
+          nav#nav1 > a{ background:rgb(200, 138, 211); color:#000; padding:10px; text-decoration:none; border-radius:5px; font-family:"Arial Black", Gadget, sans-serif; }
+          nav#nav1 > a:hover{ background: #d372cb; }
+          nav#nav1 > a:active{ background: #cfabcf; }
+          </style>
+          <script>
+          var loop = new Audio();
+          loop.src = 'assets/audio/crystalmission.mp3';
+          </script>
+		
+		</head>
+
+
+	    <body>
+
+			<body style = background:url("https://media.istockphoto.com/photos/beautiful-blush-colored-rose-quartz-crystals-picture-id105839932?k=6&m=105839932&s=612x612&w=0&h=57b0qbuYL1F2C-oyBfEJrtB_i1iZVEwncpvvI6VzTx0=")></style>
+
+				<center>
+				<!--added mp3 to body -->
+				<nav id="nav1">
+				  <a href="#" onmousedown="loop.play()">Game Music</a>
+				 
+				</nav>
+				
+				
+				
+				</center>
+
+
+
+
+	        <div class="container">
+	            <h1>Crystal Collector Game</h1>
+	
+
+	            <!-- Directions page -->
+	            <div class="page">
+	                <h2>Directions:</h2>
+	                
+	                <p>There are 4 crystals, each worth a hidden amount of points.</p>
+	                <p>Find out the value of each crystal by clicking on the crystals to find the target sum.</p>
+					<p>Add to the amount by clicking on the crystals to try to reach the target total.</p>
+					<p>GOOD LUCK! The solution is there but difficult.</p>
+	
+
+	                <div class="page_next">Start</div>
+	            </div>
+	            
+	            <!-- Game Screen page-->
+	            <div class="page">
+	                <div id="userStats">
+	                    <p>Wins: <strong><span id="numWins"></span></strong></p>
+	                    <p>Losses: <strong><span id="numLosses"></span></strong></p>
+	                </div>
+	
+
+	                <p>Make a sum of <span id="targetSum"></span>!</p>
+	                <p>Your sum is <strong><span id="currentSum"></span></strong>.</p>
+	                
+	                <div class="clearfix">
+	                    <img class="crystals" src="assets/images/Ocrystal.jpeg" alt="orange crystal">
+	                    <img class="crystals" src="assets/images/Bcrystal.jpeg" alt="blue crystal">
+	                    <img class="crystals" src="assets/images/Gcrystal.jpeg" alt="green crystal">
+	                    <img class="crystals" src="assets/images/Pcrystal.jpeg" alt="purple crystal">
+	                </div>
+	
+
+	                <div class="page_prev">Directions</div>
+	            </div>
+	        </div>
+	
+
+	        <!-- Lightbox -->
+	        <div id="lightBox_background"></div>
+	
+
+	        <div id="lightBox" class="container">
+	            <p id="outputMessage"></p>
+	        </div>
+	
+
+			<script type="text/javascript" src="assets/javascript/game.js"></script>
+			
+
+			<br>  <br> <br> <br> <br>
+			<!-- FOOTER -->
+		   <center>
+			<footer class="sticky-footer">
+			 <p class=" footer-style">
+			 <br> <br> <br><br>
+			 <strong>© Copyright 2020 - Christine Munoz - Crystal Game</strong> <br>
+			 <a href="https://github.com/christineZ5" target="_blank">GitHub Repo</a>
+			 |
+			 <a href="https://github.com/christineZ5" target="_blank">Portfolio</a>
+			 </p>
+		   
+			 </footer> 
+		   
+		   </center>
+
+
+		</body>
+		
+	</html>
